@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Logger;
@@ -7,7 +8,7 @@ import java.util.logging.SimpleFormatter;
  * К калькулятору из предыдущего дз добавить логирование.
  */
 public class Calculator_and_logging {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Logger logger = Logger.getLogger(Calculator_and_logging.class.getName());
         ConsoleHandler ch = new ConsoleHandler();
         logger.addHandler(ch);
